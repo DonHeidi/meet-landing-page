@@ -5,6 +5,8 @@ import BrandLogo from './components/BrandLogo.vue'
 import LandingSection from './components/LandingSection.vue'
 import SectionGrid from './components/SectionGrid.vue'
 import SectionCTA from './components/SectionCTA.vue'
+import CTAButton from './components/CTAButton.vue'
+import CopyOverline from './components/CopyOverline.vue'
 
 export default defineComponent({
   name: 'App',
@@ -14,6 +16,8 @@ export default defineComponent({
     LandingSection,
     SectionGrid,
     SectionCTA,
+    CTAButton,
+    CopyOverline,
   },
 })
 </script>
@@ -21,10 +25,28 @@ export default defineComponent({
 <template>
   <header>
     <BrandLogo />
-    <HeroSection />
+    <HeroSection>
+      <h1>Group Chat for Everyone</h1>
+      <p>
+        Meet makes it easy to connect with others face-to-face virtually and
+        collaborate across any device.
+      </p>
+
+      <CTAButton theme="primary">Download <span>v1.3</span></CTAButton>
+      <CTAButton theme="secondary">What is it?</CTAButton>
+    </HeroSection>
   </header>
   <main>
-    <LandingSection><SectionGrid /></LandingSection>
+    <LandingSection>
+      <SectionGrid />
+      <CopyOverline>Built for modern use</CopyOverline>
+      <h2>Smarter meetings, all in one place</h2>
+      <p>
+        Send messages, share files, show your screen, and record your meetings —
+        all in one workspace. Control who can join with invite-only team access,
+        data encryption, and data export.
+      </p>
+    </LandingSection>
     <LandingSection><SectionCTA /></LandingSection>
   </main>
 </template>

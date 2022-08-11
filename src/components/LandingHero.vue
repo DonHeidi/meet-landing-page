@@ -10,49 +10,11 @@ export default defineComponent({
 
 <template>
   <div class="hero">
-    <h1>Group Chat for Everyone</h1>
-    <p>
-      Meet makes it easy to connect with others face-to-face virtually and
-      collaborate across any device.
-    </p>
+    <slot />
   </div>
-  <a class="cta download" href="#">Download <span>v1.3</span></a>
-  <a class="cta about" href="#">What is it?</a>
-  <div class="grid"></div>
 </template>
 
 <style scoped>
-.cta {
-  display: block;
-  border-radius: 29px;
-  padding-block: 1rem;
-  align-items: center;
-  text-decoration: none;
-  margin-inline: auto;
-  font-size: 1rem;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  width: fit-content;
-}
-
-@media only screen and (min-width: 768px) {
-  .cta {
-    display: inline-block;
-    margin-inline: 0.5rem;
-  }
-}
-
-.download {
-  background-color: aqua;
-  padding-inline: 2.5rem;
-}
-
-.about {
-  background-color: purple;
-  padding-inline: 29px;
-}
-
 .hero {
   position: relative;
   overflow-x: hidden;
@@ -71,12 +33,5 @@ export default defineComponent({
   width: 100%;
   min-height: 153px;
   aspect-ratio: 414/153;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  overflow-x: hidden;
 }
 </style>
