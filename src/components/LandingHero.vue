@@ -33,5 +33,6 @@ export default defineComponent({
   width: 100%;
   min-height: 153px;
   aspect-ratio: 414/153;
+  margin-bottom: 3rem;
 }
 </style>

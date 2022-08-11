@@ -19,26 +19,39 @@ export default defineComponent({
 <style>
 .cta {
   display: block;
-  border-radius: 29px;
-  padding-block: 1rem;
-  align-items: center;
-  text-decoration: none;
-  margin-inline: auto;
+  color: #fff;
+  font-weight: 900;
   font-size: 1rem;
+  line-height: 1.625rem;
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 1rem auto;
+
+  border-radius: 29px;
+
+  align-items: center;
+
   width: fit-content;
 }
 
 .primary {
-  background-color: aqua;
+  background-color: #4d96a9;
   padding-inline: 2.5rem;
 }
 
+.primary:hover {
+  background-color: #71c0d4;
+}
+
 .secondary {
-  background-color: purple;
+  background-color: #855fb1;
   padding-inline: 29px;
+}
+
+.secondary:hover {
+  background-color: #d9b8ff;
 }
 
 @media only screen and (min-width: 768px) {

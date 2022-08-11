@@ -9,19 +9,30 @@ export default defineComponent({
 </script>
 
 <template>
-  <section>
+  <section class="section">
     <div class="numeration"></div>
     <slot />
   </section>
 </template>
 
 <style scoped>
-section:first-of-type .numeration:after {
+.section {
+  margin-top: 9.25rem;
+}
+
+.section:first-of-type .numeration:after {
   content: '01';
 }
 
-section:nth-of-type(2) .numeration:after {
+.section:nth-of-type(2) .numeration:after {
   content: '02';
+}
+
+.numeration:after {
+  color: #87879d;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.625rem;
 }
 
 .numeration {
@@ -29,21 +40,22 @@ section:nth-of-type(2) .numeration:after {
   height: 4.5rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  border-color: black;
-  border-width: 2px;
+  border-color: rgba(135, 135, 157, 0.25);
+  border-width: 1px;
   border-style: solid;
   text-align: center;
   line-height: 4.5rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: 84px;
+  margin-bottom: 4rem;
 }
 
 .numeration::before {
   content: '';
-  width: 2px;
+  width: 1px;
   height: 84px;
-  background-color: black;
+  background-color: rgba(135, 135, 157, 0.25);
   position: absolute;
   top: -84px;
   left: 50%;

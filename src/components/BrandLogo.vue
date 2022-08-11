@@ -17,5 +17,6 @@
 <style scoped>
 svg {
   margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 </style>
