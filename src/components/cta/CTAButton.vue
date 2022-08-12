@@ -8,12 +8,17 @@ export default defineComponent({
       validator: (value: string) => ['primary', 'secondary'].includes(value),
       default: () => 'primary',
     },
+    padding: {
+      type: String,
+      validator: (value: string) => ['sm', 'lg'].includes(value),
+      default: () => 'lg',
+    },
   },
 })
 </script>
 
 <template>
-  <a :class="['cta', theme]" href="#"><slot /></a>
+  <a :class="['cta', theme, `p-${padding}`]" href="#"><slot /></a>
 </template>
 
 <style>
@@ -47,11 +52,18 @@ export default defineComponent({
 
 .secondary {
   background-color: #855fb1;
-  padding-inline: 29px;
 }
 
 .secondary:hover {
   background-color: #d9b8ff;
+}
+
+.p-sm {
+  padding-inline: 29px;
+}
+
+.p-lg {
+  padding-inline: 40px;
 }
 
 @media only screen and (min-width: 768px) {
