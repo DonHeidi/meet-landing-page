@@ -8,7 +8,6 @@
     font-weight: 900;
     line-height: 2.75rem;
     margin: 1.5rem;
-    max-width: 12ch;
     white-space: pre-line;
   }
 

@@ -37,6 +37,24 @@
     font-size: 1.125rem;
   }
 
+  @media only screen and (min-width: 768px) {
+    .copy-body {
+      width: 573px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer .copy-body,
+    .footer .copy-body {
+      margin-bottom: 2.5rem;
+    }
+    header .copy-body {
+      width: 457px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   @media only screen and (min-width: 1440px) {
     .body {
       font-size: 1.125rem;

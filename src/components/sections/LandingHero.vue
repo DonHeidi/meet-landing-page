@@ -30,9 +30,19 @@
     background-size: 110.4%;
     left: -50%;
     transform: translateX(50%);
+    height: 40.8vw;
     width: 100%;
-    min-height: 153px;
-    aspect-ratio: 414/153;
     margin-bottom: 3rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .hero:before {
+      height: 313px;
+      background-size: 106.4%;
+      margin-bottom: 4.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
   }
 </style>

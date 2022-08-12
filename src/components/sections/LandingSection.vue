@@ -27,6 +27,18 @@
   .section {
     margin-top: 8.25rem;
   }
+
+  @media screen and (min-width: 768px) {
+    .section {
+      margin-top: 9.25rem;
+    }
+
+    .footer {
+      margin-top: 10.25rem;
+      padding-bottom: 3.625rem;
+    }
+  }
+
   .footer {
     margin-top: 9.25rem;
     padding-bottom: 4rem;
