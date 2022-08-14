@@ -39,6 +39,20 @@
           womenVideochatting: require('@/assets/desktop/image-women-videochatting.jpg'),
           menInMeeting: require('@/assets/desktop/image-men-in-meeting.jpg'),
           manTexting: require('@/assets/desktop/image-man-texting.jpg'),
+          title: 'Smarter meetings, all in one place',
+          overline: 'Built for modern use',
+          copy: 'Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.',
+        },
+        footer: {
+          title: 'Experience more together',
+          copy: 'Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.',
+        },
+        download: {
+          label: 'Download',
+          subLabel: 'v1.3',
+        },
+        about: {
+          label: 'What is it?',
         },
       }
     },
@@ -51,8 +65,13 @@
     <HeroSection>
       <CopyHeading>{{ hero.headline }}</CopyHeading>
       <CopyBody>{{ hero.copyHero }}</CopyBody>
-      <CTAButton>Download <CTASubLabel>v1.3</CTASubLabel></CTAButton>
-      <CTAButton theme="secondary" padding="sm">What is it?</CTAButton>
+      <CTAButton>
+        {{ download.label }}
+        <CTASubLabel>
+          {{ download.subLabel }}
+        </CTASubLabel>
+      </CTAButton>
+      <CTAButton theme="secondary" padding="sm">{{ about.label }}</CTAButton>
     </HeroSection>
   </header>
   <main>
@@ -63,24 +82,20 @@
         <GalleryImage :src="main.menInMeeting" alt="" />
         <GalleryImage :src="main.manTexting" alt="" />
       </GalleryGrid>
-      <CopyOverline>Built for modern use</CopyOverline>
-      <CopySubHeading>Smarter meetings, all in one place</CopySubHeading>
-      <CopyBody>
-        Send messages, share files, show your screen, and record your meetings —
-        all in one workspace. Control who can join with invite&#8209;only team
-        access, data encryption, and data export.
-      </CopyBody>
+      <CopyOverline>{{ main.overline }}</CopyOverline>
+      <CopySubHeading>{{ main.title }}</CopySubHeading>
+      <CopyBody>{{ main.copy.replace('-', '&#8209;') }}</CopyBody>
     </LandingSection>
   </main>
   <footer>
     <LandingSection theme="dark" footer>
-      <CopySubHeading theme="light"> Experience more together </CopySubHeading>
-      <CopyBody theme="light">
-        Stay connected with reliable HD meetings and unlimited one-on-one and
-        group video sessions.
-      </CopyBody>
+      <CopySubHeading theme="light">{{ footer.title }}</CopySubHeading>
+      <CopyBody theme="light">{{ footer.copy }}</CopyBody>
       <CTAButton theme="secondary">
-        Download <CTASubLabel>v1.3</CTASubLabel>
+        {{ download.label }}
+        <CTASubLabel>
+          {{ download.subLabel }}
+        </CTASubLabel>
       </CTAButton>
     </LandingSection>
   </footer>

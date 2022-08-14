@@ -52,6 +52,10 @@
       margin-right: auto;
     }
 
+    section .copy-body {
+      width: 540px;
+    }
+
     footer .copy-body,
     .footer .copy-body {
       margin-bottom: 2.5rem;
