@@ -28,6 +28,7 @@
 
   @media only screen and (min-width: 1440px) {
     svg {
+      margin-top: 80px;
       margin-bottom: 6.75rem;
     }
   }
