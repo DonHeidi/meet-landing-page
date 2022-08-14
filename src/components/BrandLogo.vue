@@ -15,8 +15,20 @@
 </template>
 
 <style scoped>
-svg {
-  margin-top: 2.5rem;
-  margin-bottom: 3.5rem;
-}
+  svg {
+    margin-top: 2.5rem;
+    margin-bottom: 3.385rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    svg {
+      margin-bottom: 4rem;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    svg {
+      margin-bottom: 6.75rem;
+    }
+  }
 </style>

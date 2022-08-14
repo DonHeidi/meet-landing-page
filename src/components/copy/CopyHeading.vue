@@ -8,20 +8,21 @@
     font-weight: 900;
     line-height: 2.75rem;
     margin: 1.5rem;
+    margin-top: 0px;
     white-space: pre-line;
-  }
-
-  @media only screen and (min-width: 1440px) {
-    .heading {
-      font-size: 4rem;
-      line-height: 4rem;
-    }
   }
 
   @media only screen and (min-width: 768px) {
     .heading {
       font-size: 3rem;
       line-height: 3rem;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .heading {
+      font-size: 4rem;
+      line-height: 4rem;
     }
   }
 </style>

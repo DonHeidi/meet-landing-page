@@ -19,7 +19,17 @@
   @media only screen and (min-width: 768px) {
     .grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      max-width: 1100px;
       margin-bottom: 3rem;
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+    }
+  }
+
+  @media only screen and (min-width: calc(1100px + 5rem)) {
+    .grid {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 </style>

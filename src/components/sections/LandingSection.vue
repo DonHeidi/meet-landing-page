@@ -28,17 +28,6 @@
     margin-top: 8.25rem;
   }
 
-  @media screen and (min-width: 768px) {
-    .section {
-      margin-top: 9.25rem;
-    }
-
-    .footer {
-      margin-top: 10.25rem;
-      padding-bottom: 3.625rem;
-    }
-  }
-
   .footer {
     margin-top: 9.25rem;
     padding-bottom: 4rem;
@@ -71,7 +60,7 @@
     width: 100%;
     background-color: rgba(77, 150, 169, 0.9);
     margin-top: 28px;
-    background-position-y: 50px;
+
     z-index: -1;
   }
 
@@ -120,5 +109,43 @@
 
   .footer .numeration:after {
     content: '02';
+  }
+
+  @media screen and (min-width: 768px) {
+    .section {
+      margin-top: 9.25rem;
+    }
+
+    .footer {
+      margin-top: 10.25rem;
+      padding-bottom: 3.625rem;
+    }
+
+    .dark:before {
+      background: url('../../assets/desktop/image-footer.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .footer {
+      margin-top: 9.75rem;
+      height: 308px;
+      padding: 0px;
+    }
+    .footer > :not(.numeration) {
+      display: inline-block;
+      vertical-align: middle;
+      width: 350px;
+      margin-bottom: 0px !important;
+      margin-top: 0px;
+      text-align: left;
+    }
+
+    .footer > :last-child {
+      width: fit-content;
+    }
   }
 </style>
